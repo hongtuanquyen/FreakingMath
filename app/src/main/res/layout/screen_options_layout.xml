@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/screen_options_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Screen_Options"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtView_Background"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:text="Background"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtView_Music"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtView_Background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Music"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layout_sound_option"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtView_Music"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtView_Sound"
+            android:textSize="30sp"
+            android:text="Sound"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_Sound"
+            android:layout_toRightOf="@id/txtView_Sound"
+            android:layout_below="@id/txtView_Music"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtView_DefaultSetting"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="Default Setting"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_below="@id/layout_sound_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_Background"
+        android:text="Color"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/txtView_Background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_Music"
+        android:text="Music"
+        android:layout_alignBaseline="@id/txtView_Music"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_DefaultSetting"
+        android:text="Reset"
+        android:layout_alignBaseline="@id/txtView_DefaultSetting"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>
