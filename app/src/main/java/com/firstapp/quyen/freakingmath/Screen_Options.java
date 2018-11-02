@@ -23,7 +23,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Screen_Options extends AppCompatActivity implements View.OnClickListener {
     Button btnBg;
@@ -38,7 +37,7 @@ public class Screen_Options extends AppCompatActivity implements View.OnClickLis
     TextView txtViewDefaultSetting;
     ListView listViewMusic;
     RelativeLayout ScreenOptionLayout;
-    private SeekBar volumeSeekbar = null;
+    SeekBar volumeSeekbar = null;
     private AudioManager audioManager = null;
     private int colorOptions;
     private int musicOptions;

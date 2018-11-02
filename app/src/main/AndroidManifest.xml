@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Screen_Options"/>
+        <activity android:name=".Screen_Game"/>
     </application>
 
 </manifest>

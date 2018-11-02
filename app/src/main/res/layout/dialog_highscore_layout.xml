@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#e1fe3f"
+    android:layout_width="300dp"
+    android:layout_height="280dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textView_HighScores"
+        android:textColor="#ff7c3e"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:text="HIGH SCORES"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_FirstScore"
+        android:textColor="#ff7c3e"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="1. "
+        android:layout_below="@id/textView_HighScores"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_SecondScore"
+        android:textColor="#ff7c3e"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="2. "
+        android:layout_below="@id/textView_FirstScore"
+        android:layout_alignLeft="@id/textView_FirstScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_ThirdScore"
+        android:textColor="#ff7c3e"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="3. "
+        android:layout_below="@id/textView_SecondScore"
+        android:layout_alignLeft="@id/textView_SecondScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_FourthScore"
+        android:textColor="#ff7c3e"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="4. "
+        android:layout_below="@id/textView_ThirdScore"
+        android:layout_alignLeft="@id/textView_ThirdScore"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_FifthScore"
+        android:textColor="#ff7c3e"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="5. "
+        android:layout_below="@id/textView_FourthScore"
+        android:layout_alignLeft="@id/textView_FourthScore"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
